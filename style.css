@@ -21,8 +21,9 @@ body{
 
 .container p{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .container input{
@@ -53,7 +54,7 @@ body{
     border-radius: 5px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s;
+    transition: max-height 2s;
 }
 
 #imgBox img{
@@ -65,4 +66,28 @@ body{
     max-height: 300px;
     margin: 10px auto;
     border: 1px solid #d1d1d1;
+}
+
+/* animation for input cleaned */
+input.error{
+    animation: shake 0.1s linear 10;
+    border-color: red;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
