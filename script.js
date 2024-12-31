@@ -9,6 +9,9 @@ function generateQR(){
         alert("Please enter a valid text or URL!");
         return;
     }
-
+    
+    // font:  https://goqr.me/api/
     qrImage.src = " https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + text;
+
+    imgBox.classList.add("show-img");
 }
